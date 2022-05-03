@@ -5,13 +5,13 @@ plot.qic <- function(x, title, ylab, xlab, subtitle, caption, part.labels,
                      decimals, flip, dots.only, point.size,
                      x.format, x.angle, x.pad,
                      y.expand, y.percent, y.percent.accuracy, strip.horizontal,
-                     col.line = '#5DA5DA', 
+                     col.line = 'black', 
                      col.signal = '#F15854', 
                      col.target = '#059748',
                      ...) {
   # Set colours
-  col1      <- '#8C8C8C' # rgb(140, 140, 140, maxColorValue = 255) # grey
-  col2      <- getOption('qic.linecol', default = '#5DA5DA')       # blue
+  col1      <- '#333333' # rgb(140, 140, 140, maxColorValue = 255) # grey
+  col2      <- getOption('qic.linecol', default = 'black')       # blue
   col3      <- getOption('qic.signalcol', default = '#F15854')     # red
   col4      <- getOption('qic.targetcol', default = '#059748')     # green
   col5      <- '#C8C8C8' # rgb(200, 200, 200, maxColorValue = 255) # light grey
